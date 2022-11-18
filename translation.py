@@ -1,6 +1,6 @@
 class Translation(object):
     
-    START_TXT = """<i><b> Hello👋 {},\n\nI'm A Simple Rename Bot With Permanent Thumbnail And Custom Caption support !!\n\nClick ℹ️ Help Button To Know More Me !!</b></i>"""
+    START_TXT = """<i><b> Hello👋 {},\n\nI'm A Simple Renamer X Bot With Permanent Thumbnail And Custom Caption support !!\n\nFor More Information Click ℹ️ Help</b></i>"""
 
     PROGRESS_BAR = """\n
 ╭───[**🔅Progress Bar🔅**]───⍟
@@ -30,12 +30,14 @@ class Translation(object):
 * Available Three Upload Mode  
 * Support Broadcast
 * Support Ban Or Unban User
-* Support User Status</i></b>"""
+* Support User Status
+
+Thank You For Using Me ♥️</i></b>"""
  
     OWNER_COMMANDS_TXT = """
-<b><i><u>🤴 OWNER COMMANDS:</u>
+<b><i><u>🤴 ADMIN COMMANDS:</u>
 
-• Following Commands Only Can Use Bot Owner 👇
+• Following Commands Only Can Use Bot Admin 👇
 
 ➢ /ban - To Ban A User(Admin Only)
 ➢ /unban - To Unban A User(Admin Only)
@@ -57,7 +59,7 @@ class Translation(object):
     THUMBNAIL_TXT = """
 <b><u>🖼️ CUSTOM THUMBNAIL</u></b>
 
-You Can Add Custom Thumbnail Simply By Sending A Photo To Me"""
+You Can Add Custom Thumbnail Simply By Sending A Photo To Me 🖼️"""
 
     CUSTOM_CAPTION_TXT = """
 <b><u>📝 CUSTOM CAPTION</u></b>
