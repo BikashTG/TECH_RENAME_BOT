@@ -1,5 +1,5 @@
 {
-  "name": "md-renamebot",
+  "name": "TECH_RENAME_BOT",
   "stack": "container",
   "description": "A simple rename bot with many features",
   "keywords": [
@@ -10,8 +10,8 @@
     "Rename",
     "pyrogram"
   ],
-  "website": "https://github.com/Mdbotz/md-renamebot",
-  "repository": "https://github.com/Mdbotz/md-renamebot",
+  "website": "https://github.com/BikashTG/TECH_RENAME_BOT",
+  "repository": "https://github.com/BikashTG/TECH_RENAME_BOT",
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
