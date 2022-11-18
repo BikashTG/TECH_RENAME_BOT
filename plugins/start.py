@@ -85,7 +85,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
         await query.message.edit_text(
             text=Translation.OWNER_COMMANDS_TXT,
             reply_markup=InlineKeyboardMarkup(
-               [[InlineKeyboardButton('Back', callback_data="help")]]
+               [[InlineKeyboardButton('🔙 Back', callback_data="help")]]
         ))
      
     elif data == "about":
