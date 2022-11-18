@@ -1,43 +1,17 @@
-# md-renamebot 
+## TECH_RENAME_BOT 
+![images (3)](https://user-images.githubusercontent.com/113157573/198686164-b5210f94-1cfd-48ef-a322-c23fbdc9b98e.jpeg)
 
-<p align="center">
-  <a href="https://https://github.com/Mdbotz/md-renamebot/stargazers">
-    <img src="https://img.shields.io/github/stars/Mdbotz/md-renamebot?style=social">
+<p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
 
-  </a>
-  
-  <a href="https://github.com/Mdbotz/md-renamebot/fork">
-    <img src="https://img.shields.io/github/forks/Mdbotz/md-renamebot?label=Fork&style=social">
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=BikashTG&repo=TECH_RENAME_BOT&theme=dark)
 
-  </a>  
+### DEPLOYEMENT SUPPORT
+
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/BikashTG/TECH_RENAME_BOT">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 </p>
-
-A ADVANCE RENAME BOT WITH CUSTOM CAPTION AND THUMBNAIL SUPPORT 
-
-# DEPLOY TO HEROKU
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?)
-
-# FEATURES 
-
-- [x] Custom caption
-- [x] Custom thumbnail 
-- [x] Better speed 
-- [x] Broadcast
-- [x] stats, ban 
-- [x] Force subscribe
-- [x] Three upload mode
-- [x] Support 2 GB + Files (comming soon)
-
-# MANDATORY VARIABLES
-
-* `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-* `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `OWNER_ID`: Username or ID of the bot owner.
-* `DATABASE_URI`: MONGODB URI. Get this value from [mongoDB](https://www.mongodb.com)
-
-# SUPPORT
-
-- [UPDATE CHANNEL](https://t.me/venoms)
-- [SUPPORT GROUP](https://t.me/mdbotz)
+</details>
