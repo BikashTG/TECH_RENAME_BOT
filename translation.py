@@ -1,9 +1,7 @@
 class Translation(object):
     
-    START_TXT = """ <b> Hi {} ,
- I'm A Simple Rename Bot With Permanent Thumbnail And Custom Caption support!</b>
-<b>Click help button to know more about me !</b>\n 
-"""
+    START_TXT = """<i><b> Hello👋 {},\n\nI'm A Simple Rename Bot With Permanent Thumbnail And Custom Caption support !!\nClick ℹ️ Help Button To Know More About Me !!</b></i>"""
+
     PROGRESS_BAR = """\n
 ╭───[**🔅Progress Bar🔅**]───⍟
 │
@@ -16,65 +14,69 @@ class Translation(object):
 ├<b>⏱️ : {4}</b>
 ╰─────────────────⍟"""
     HELP_TXT = """
-<b><i><u>✨ AVAILABLE COMMANDS:</u> 
-➢ /rename - To rename a file or video or audio
-➢ /settings - To configure your configs 
-➢ /addcaption - To add a custom caption
-➢ /showcaption - To show your custom caption
-➢ /deletethumb - To remove your custom thumbnail 
-➢ /showthumb - To show your custom thumbnail
+<b><i><u>✨ AVAILABLE COMMANDS:</u>
+ 
+➢ /rename - To Rename A File Or Video Or Audio(All User)
+➢ /settings - To Configure Your Settings(All User)
+➢ /addcaption - To Add  A Custom Caption(All User)
+➢ /showcaption - To Show Your Custom Caption(All User)
+➢ /deletethumb - To Remove Your Custom Thumbnail(All User)
+➢ /showthumb - To Show Your Custom Thumbnail(All User)
+
 <u>🔥 FEATURES:</u>
-➻ support custom caption
-➻ support custom thumbnail 
-➻ Available three upload mode  
-➻ support broadcast</i></b>
-""" 
+
+* Support Custom Caption
+* Support Custom Thumbnail 
+* Available Three Upload Mode  
+* Support Broadcast
+* Support Ban Or Unban User
+* Support User Status</i></b>"""
+ 
     OWNER_COMMANDS_TXT = """
-<b><i><u>👨 OWNER COMMANDS:</u>
+<b><i><u>🤴 OWNER COMMANDS:</u>
 
-• Following commands only can use bot owner.
+• Following Commands Only Can Use Bot Owner 👇
 
-➢ /ban - To ban a user 
-➢ /unban - To unban a user 
-➢ /stats - To get bot users stats
-➢ /broadcast - To broadcast messages to users</i></b>
-"""
+➢ /ban - To Ban A User(Admin Only)
+➢ /unban - To Unban A User(Admin Only)
+➢ /stats - To Get Bot Users Stats(Admin Only)
+➢ /broadcast - To Broadcast Messages To Users(Admin Only)</i></b>"""
+
     ABOUT_TXT = """
 ╔════❰ RENAME BOT ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣
 ║┣⪼📃ʙᴏᴛ : [{}](https://t.me/{})
-║┣⪼👦ᴄʀᴇᴀᴛᴏʀ : [ᴍᴅᴀᴅᴍɪɴ](https://t.me/mdadmin2)
+║┣⪼👦ᴄʀᴇᴀᴛᴏʀ : [ᴍᴅᴀᴅᴍɪɴ](https://t.me/hellodarklord21)
 ║┣⪼📡ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ
 ║┣⪼🗣️ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ3
 ║┣⪼📚ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ ᴀsʏɴᴄɪᴏ {} 
 ║┣⪼🗒️ᴠᴇʀsɪᴏɴ : {}
 ║╰━━━━━━━━━━━━━━━➣
-╚══════════════════❍⊱❁۪۪
-"""
+╚══════════════════❍⊱❁۪۪"""
     
     THUMBNAIL_TXT = """
-<b>🖼️ CUSTOM THUMBNAIL</b>
+<b><u>🖼️ CUSTOM THUMBNAIL</u></b>
 
-you can add custom thumbnail simply by sending a photo to me 
-"""
+You Can Add Custom Thumbnail Simply By Sending A Photo To Me"""
+
     CUSTOM_CAPTION_TXT = """
-<b>📝 CUSTOM CAPTION</b>
+<b><u>📝 CUSTOM CAPTION</u></b>
 
-➢ /addcaption <your caption> - To add your custom caption 
+➢ /addcaption <your caption> - To Add Your Custom Caption 
 
-<b>AVAILABLE FILLINGS:</b>
-• `{filename}` - new file name
-• `{size}` - size of the media
-• `{duration}` - duration of the media
-"""
+<b><u>🎉 AVAILABLE FILLINGS:</u></b>
+
+• `{filename}` - New File Name
+• `{size}` - Size Of The Media
+• `{duration}` - Duration Of The Media"""
     
     SETTINGS_TXT = "<b><u>⚙️ SETTINGS</u>\nConfigure your settings using this buttons</b>"
-    BANNED_TXT = "<b>Sorry dude, You would be banned from using me</b>"
-    DOWNLOAD_START_TXT = "<b>Downloading To My server !!</b>"
-    UPLOAD_START_TXT = "<b>Uploading into telegram</b>"
-    UPLOAD_SUCCESS_TXT = "<b>Thank you for Using Me ❤️</b>"
+    BANNED_TXT = "<b>Sorry Dude 😔, You Would Be Banned From Using Me 🚫\nContact My Support Group.</b>"
+    DOWNLOAD_START_TXT = "<b>Downloading To My Server !!</b>"
+    UPLOAD_START_TXT = "<b>Uploading Into Telegram</b>"
+    UPLOAD_SUCCESS_TXT = "<b>Thank You For Using Me ❤️</b>"
     NEW_CUSTOM_THUMB_TXT = "✔️ Thumbnail Successfully Added"
     REMOVE_CUSTOM_THUMB_TXT = "🗑️ Thumbnail Successfully Removed"
-    DOWNLOAD_SUCCESS_TXT = "<b>Media Downloded successfully 🎉</b>"
-    THUMB_NOT_FOUND_TXT = "Didn't found any thumbnail yet"
-    REPLY_MEDIA_TXT = "<b>Please Reply To An File or video or audio With filename & extension</b>"
+    DOWNLOAD_SUCCESS_TXT = "<b>Media Downloded Successfully 🎉</b>"
+    THUMB_NOT_FOUND_TXT = "Didn't Found Any Thumbnail Yet"
+    REPLY_MEDIA_TXT = "<b>Please Reply To An File Or Video Or Audio With Filename & Extension</b>"
