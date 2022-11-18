@@ -16,8 +16,8 @@ async def start(bot, message):
         Translation.START_TXT.format(user.mention),
         reply_markup=InlineKeyboardMarkup(
              [[
-               InlineKeyboardButton('🔗 Suppot Group', url='https://t.me/+eLB5a6LWmdRmOWQx'),
-               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018')
+               InlineKeyboardButton('🔗 Suppot', url='https://t.me/+eLB5a6LWmdRmOWQx'),
+               InlineKeyboardButton('🔔 Updates', url='https://t.me/Tech_Projects2018')
              ],[
                 InlineKeyboardButton("ℹ️ Help", callback_data = "help")
              ]]
@@ -61,8 +61,8 @@ async def cb_handler(client: Client , query: CallbackQuery):
             text=Translation.START_TXT.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
              [[
-               InlineKeyboardButton('🔗 Suppot Group', url='https://t.me/+eLB5a6LWmdRmOWQx'),
-               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018')
+               InlineKeyboardButton('🔗 Suppot', url='https://t.me/+eLB5a6LWmdRmOWQx'),
+               InlineKeyboardButton('🔔 Updates', url='https://t.me/Tech_Projects2018')
              ],[
                 InlineKeyboardButton("ℹ️ Help", callback_data = "help")
              ]]
@@ -74,7 +74,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup(
                  [[
-                 InlineKeyboardButton('🤴 Owner Commands', callback_data="owner_cmd"),
+                 InlineKeyboardButton('🤴 Admin Commands', callback_data="owner_cmd"),
                  InlineKeyboardButton('🤠 About', callback_data="about")
                  ],[
                  InlineKeyboardButton('🔙 Back', callback_data="start")
@@ -141,15 +141,15 @@ async def cb_handler(client: Client , query: CallbackQuery):
     elif data =="show_caption":
         caption = await db.get_caption(user_id)
         if not caption:
-           return await query.answer("You didn't added any custom caption", show_alert=True)
+           return await query.answer("You Don't Add Any Custom Caption ✖️", show_alert=True)
         await query.answer(f"Your Custom Caption:\n\n{caption}", show_alert=True)
         
     elif data == "delete_caption":
         caption = await db.get_caption(user_id)
         if not caption:
-           return await query.answer("Nothing will found to delete", show_alert=True)
+           return await query.answer("Nothing Will Found To Delete", show_alert=True)
         await db.set_caption(query.from_user.id, None)
-        return await query.answer("caption deleted successfully", show_alert=True)   
+        return await query.answer("Caption Deleted Successfully ✔️", show_alert=True)   
     
     elif data == "custom_thumbnail":
         await query.message.edit_text(
