@@ -16,14 +16,12 @@ async def start(bot, message):
         Translation.START_TXT.format(user.mention),
         reply_markup=InlineKeyboardMarkup(
              [[
-               InlineKeyboardButton("♦️ Help", callback_data = "help")
+               InlineKeyboardButton("🔗 Suppot Group", url='https://t.me/+eLB5a6LWmdRmOWQx')
+               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018'),
              ],[
-               InlineKeyboardButton('📢 Update Channel', url='https://t.me/venombotupdates'),
-               InlineKeyboardButton('♻️ Suppot Group', url='https://t.me/venombotsupport')
-             ],[
-                InlineKeyboardButton('📃 Source code', url='https://github.com/Mdbotz/md-renamebot')
+                InlineKeyboardButton('ℹ️ Help', callback_data = "help")
              ]]
-   ))
+         ))
                             
 @Client.on_message(filters.command('settings'))
 async def settings(bot, message):
@@ -37,7 +35,7 @@ async def settings(bot, message):
       InlineKeyboardButton(f'📤 Upload mode', callback_data="toggle_mode"),
       InlineKeyboardButton(upload_mode, callback_data="toggle_mode")
       ],[
-      InlineKeyboardButton('⛔ Close', callback_data="close")
+      InlineKeyboardButton('🔐 Close', callback_data="close")
     ]]
     await message.reply_text(
          text=Translation.SETTINGS_TXT,
@@ -49,8 +47,8 @@ async def stats(bot, message):
     msg = await message.reply_text("Fetching...")
     total, banned = await db.total_users_count() 
     await msg.edit_text(
-       f"<b>• Total users:</b> `{total}`\n"
-       f"<b>• Banned users:</b> `{banned}`"
+       f"<b>👤 Total Users:</b> `{total}`\n"
+       f"<b>🚫 Banned Users:</b> `{banned}`"
     )
    
 @Client.on_callback_query()
@@ -63,14 +61,12 @@ async def cb_handler(client: Client , query: CallbackQuery):
             text=Translation.START_TXT.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
              [[
-               InlineKeyboardButton("♦️ Help", callback_data = "help")
+               InlineKeyboardButton("🔗 Suppot Group", url='https://t.me/+eLB5a6LWmdRmOWQx')
+               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018'),
              ],[
-               InlineKeyboardButton('📢 Update Channel', url='https://t.me/Md_bOTs'),
-               InlineKeyboardButton('♻️ Suppot Group', url='https://t.me/Md_bOTs')
-             ],[
-                InlineKeyboardButton('📃 Source code', url='https://github.com/hockbhmv/FileRenameBot')
+                InlineKeyboardButton('ℹ️ Help', callback_data = "help")
              ]]
-        ))
+         )) 
         
     elif data == "help":
         await query.message.edit_text(
@@ -78,10 +74,10 @@ async def cb_handler(client: Client , query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup(
                  [[
-                 InlineKeyboardButton('👨🏻 Owner commands', callback_data="owner_cmd"),
-                 InlineKeyboardButton('💬 About', callback_data="about")
+                 InlineKeyboardButton('🤴 Owner Commands', callback_data="owner_cmd"),
+                 InlineKeyboardButton('🤠 About', callback_data="about")
                  ],[
-                 InlineKeyboardButton('back', callback_data="start")
+                 InlineKeyboardButton('🔙 Back', callback_data="start")
             ]]
         ))
         
@@ -99,9 +95,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup(
             [[
-              InlineKeyboardButton('📃 Source code', url='https://github.com/Mdbotz/md-renamebot')
-            ],[
-              InlineKeyboardButton('Back', callback_data = "help"),
+              InlineKeyboardButton('🔙 Back', callback_data = "help"),
             ]]
         ))
      
@@ -125,7 +119,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
          InlineKeyboardButton(f'📤 Upload mode', callback_data="toggle_mode"),
          InlineKeyboardButton(mode if mode else "Default", callback_data="toggle_mode")
          ],[
-         InlineKeyboardButton('⛔ Close', callback_data="close")
+         InlineKeyboardButton('🔐 Close', callback_data="close")
          ]] 
        await query.message.edit_text(
           text=Translation.SETTINGS_TXT,
@@ -140,7 +134,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                 InlineKeyboardButton('👀 Show Caption', callback_data="show_caption"),
                 InlineKeyboardButton("🗑️ Delete Caption", callback_data="delete_caption")
               ],[
-                InlineKeyboardButton('Back', callback_data="settings")
+                InlineKeyboardButton('🔙 Back', callback_data="settings")
               ]]
         ))
              
@@ -165,7 +159,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
                 InlineKeyboardButton('👀 Show Thumbnail', callback_data="show_thumb"),
                 InlineKeyboardButton("🗑️ Delete Thumbnail", callback_data="delete_thumb")
                 ],[
-                InlineKeyboardButton('Back', callback_data="settings")
+                InlineKeyboardButton('🔙 Back', callback_data="settings")
                ]]
         ))
         
