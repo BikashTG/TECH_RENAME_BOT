@@ -16,8 +16,8 @@ async def start(bot, message):
         Translation.START_TXT.format(user.mention),
         reply_markup=InlineKeyboardMarkup(
              [[
-               InlineKeyboardButton('🔗 Suppot Group', url='https://t.me/+eLB5a6LWmdRmOWQx')
-               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018'),
+               InlineKeyboardButton('🔗 Suppot Group', url='https://t.me/+eLB5a6LWmdRmOWQx'),
+               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018')
              ],[
                 InlineKeyboardButton("ℹ️ Help", callback_data = "help")
              ]]
@@ -61,8 +61,8 @@ async def cb_handler(client: Client , query: CallbackQuery):
             text=Translation.START_TXT.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
              [[
-               InlineKeyboardButton('🔗 Suppot Group', url='https://t.me/+eLB5a6LWmdRmOWQx')
-               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018'),
+               InlineKeyboardButton('🔗 Suppot Group', url='https://t.me/+eLB5a6LWmdRmOWQx'),
+               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018')
              ],[
                 InlineKeyboardButton("ℹ️ Help", callback_data = "help")
              ]]
