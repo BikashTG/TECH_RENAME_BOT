@@ -17,9 +17,9 @@ async def start(bot, message):
         reply_markup=InlineKeyboardMarkup(
              [[
                InlineKeyboardButton("🔗 Suppot Group", url='https://t.me/+eLB5a6LWmdRmOWQx')
-               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018'),
+               InlineKeyboardButton("🔔 Updates Channel", url='https://t.me/Tech_Projects2018'),
              ],[
-                InlineKeyboardButton('ℹ️ Help', callback_data = "help")
+                InlineKeyboardButton("ℹ️ Help", callback_data = 'help')
              ]]
          ))
                             
@@ -62,9 +62,9 @@ async def cb_handler(client: Client , query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
              [[
                InlineKeyboardButton("🔗 Suppot Group", url='https://t.me/+eLB5a6LWmdRmOWQx')
-               InlineKeyboardButton('🔔 Updates Channel', url='https://t.me/Tech_Projects2018'),
+               InlineKeyboardButton("🔔 Updates Channel", url='https://t.me/Tech_Projects2018'),
              ],[
-                InlineKeyboardButton('ℹ️ Help', callback_data = "help")
+                InlineKeyboardButton("ℹ️ Help", callback_data = 'help')
              ]]
          )) 
         
